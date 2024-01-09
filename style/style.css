@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;500&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  background: #21211D;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  color: #906A4E;
+  font-family: "Allura", cursive;
+}
+
+header {
+  background: url(../img/bg-slider-06.jpg) center/cover;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background: transparent;
+  padding: 0px 160px;
+  position: relative;
+}
+header nav .logo {
+  font-family: "Allura", cursive;
+  font-size: 2.5rem;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 0.8rem;
+}
+header nav ul li {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+header nav ul li i {
+  letter-spacing: 15px;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 90vh;
+  padding-top: 210px;
+}
+header .container .picto {
+  background: url(../img/ic-plate-big.png) center/cover;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 60px;
+  margin-top: 65px;
+}
+header .container h2 {
+  font-size: 2.5rem;
+}
+header .container h1 {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+  line-height: 35px;
+}
+header .container p {
+  letter-spacing: 7px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 50vh;
+}
+main .left-main {
+  background: rgb(236, 236, 236);
+  text-align: center;
+}
+main .left-main .border {
+  margin: 20px;
+  border: #906A4E 1px dashed;
+  min-height: 50vh;
+  padding-top: 50px;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+main .left-main h2 {
+  font-size: 2rem;
+  line-height: 40%;
+}
+main .left-main h1 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+}
+main .left-main .picto {
+  background: url(../img/ic-plate.png) center/cover;
+  height: 30px;
+  width: 30px;
+  margin: 0 auto;
+}
+main .left-main p {
+  color: black;
+}
+main .left-main .img {
+  background: url(../img/avatar-01.jpg) center/cover;
+  height: 60px;
+  width: 60px;
+  border-radius: 150px;
+  margin: 0 auto;
+}
+main .right-main {
+  background: url(../img/store-01.jpg) center/cover;
+}
+
+.section-menu {
+  min-height: 100vh;
+  min-width: 100vh;
+  position: relative;
+}
+.section-menu:after {
+  content: "";
+  position: absolute;
+  height: 550px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  background: url(../img/bg-menu-01.jpg) center/cover;
+}
+.section-menu h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+.section-menu .picto {
+  background: url(../img/ic-plate-big.png) center/cover;
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.section-menu ul {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 40px;
+}
+.section-menu ul li {
+  position: relative;
+}
+.section-menu ul li::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #ffffff;
+  bottom: -40%;
+  left: 0;
+  width: 95%;
+}
+.section-menu .menu {
+  display: grid;
+  align-items: center;
+  justify-items: stretch;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background: rgb(236, 236, 236);
+  width: 55%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 650px;
+  position: relative;
+  z-index: 1;
+}
+.section-menu .menu div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  position: relative;
+}
+.section-menu .menu div p {
+  color: #21211D;
+  width: 230px;
+}
+.section-menu .menu div h3 {
+  font-family: "Poppins", sans-serif;
+  color: #906A4E;
+}
+.section-menu .menu div::after {
+  content: "";
+  position: absolute;
+  border: 1px dashed;
+  background: #2a2a2a;
+  width: 92%;
+  top: 100px;
+}
+.section-menu .menu .img {
+  height: 80px;
+  width: 80px;
+}
+.section-menu .menu img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50px;
+}
+.section-menu .menu::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #906A4E;
+  width: 100%;
+  top: 0;
+}
+
+.reservation {
+  margin-top: 190px;
+  min-height: 50vh;
+  min-width: 100vh;
+}
+.reservation .grid-reservation {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 30% 70%;
+  max-width: 80%;
+  height: 60vh;
+  margin: 40px auto;
+  background: rgb(0, 0, 0);
+  box-shadow: black 0px 0px 10px 0;
+}
+.reservation .grid-reservation .left-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 40vh;
+}
+.reservation .grid-reservation .left-grid .picto {
+  background: url(../img/ic-plate-big.png) center/cover;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+}
+.reservation .grid-reservation .right-grid {
+  background: rgb(236, 236, 236);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reservation .grid-reservation .right-grid h2 {
+  font-size: 2rem;
+}
+.reservation .grid-reservation .right-grid h1 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.reservation .grid-reservation .right-grid .picto {
+  background: url(../img/ic-plate.png) center/cover;
+  height: 30px;
+  width: 30px;
+  margin: 15px auto;
+}
+.reservation .grid-reservation .right-grid .grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  max-width: 80%;
+  gap: 20px;
+  align-items: center;
+}
+.reservation .grid-reservation .right-grid .grid select {
+  height: 48px;
+  padding: 15px;
+}
+.reservation .grid-reservation .right-grid .grid select, .reservation .grid-reservation .right-grid .grid input {
+  background: transparent;
+  border: 1px black solid;
+  color: black;
+  border-radius: 30px;
+}
+.reservation .grid-reservation .right-grid input {
+  background: #21211D;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  border: 0px;
+  letter-spacing: 2px;
+  margin: 20px 0;
+}
+
+.evenements h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: 80px;
+}
+.evenements h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+  line-height: 80%;
+}
+.evenements .picto {
+  background: url(../img/ic-plate-big.png) center/cover;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.evenements .grid-evenements {
+  display: grid;
+  grid-template-columns: 58% 39%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "fir sec" "thi sec";
+  height: 400px;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+.evenements .grid-evenements .first {
+  grid-area: fir;
+}
+.evenements .grid-evenements .second {
+  grid-area: sec;
+  background: url(../img/event-03.jpg) center/cover;
+  height: 100%;
+  width: 100%;
+  color: black;
+}
+.evenements .grid-evenements .second .cadre {
+  background: rgb(236, 236, 236);
+  height: 90%;
+  margin: 20px;
+  position: relative;
+}
+.evenements .grid-evenements .second .cadre .second-absolute {
+  position: absolute;
+  background: #21211D;
+  height: 80px;
+  width: 80px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.evenements .grid-evenements .second .cadre .text-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+  padding-top: 20px;
+}
+.evenements .grid-evenements .second .cadre p {
+  text-align: center;
+}
+.evenements .grid-evenements .third {
+  grid-area: thi;
+}
+.evenements .grid-evenements .first, .evenements .grid-evenements .third {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  position: relative;
+  background: rgb(236, 236, 236);
+  color: black;
+}
+.evenements .grid-evenements .first .img-1, .evenements .grid-evenements .third .img-1 {
+  background: url(../img/event-01.jpg) center/cover;
+  height: 100%;
+  width: 100%;
+}
+.evenements .grid-evenements .img-3 {
+  background: url(../img/event-02.jpg) center/cover;
+  height: 100%;
+  width: 100%;
+}
+.evenements .grid-evenements div .absolute {
+  position: absolute;
+  background: #21211D;
+  height: 80px;
+  width: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12%;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.evenements .grid-evenements .text {
+  padding: 20px;
+}
+
+.feedback {
+  min-height: 70vh;
+  color: black;
+  position: relative;
+}
+.feedback::after {
+  content: "";
+  position: absolute;
+  background: url(../img/gmap.jpg) center/cover;
+  height: 400px;
+  min-width: 100%;
+  top: 40%;
+}
+.feedback .block {
+  background: rgb(236, 236, 236);
+  max-width: 80%;
+  height: 40vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: 200px;
+  z-index: 1;
+}
+.feedback .block .img {
+  background: url(../img/avatar-02.jpg) center/cover;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  border-radius: 150px;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-30%);
+}
+.feedback .block p {
+  max-width: 70%;
+  margin: 0 auto;
+  line-height: 200%;
+}
+.feedback .block h3 {
+  margin: 30px 0;
+}
+.feedback .block h5 {
+  color: #906A4E;
+}
+
+footer {
+  min-height: 30vh;
+  min-width: 100vh;
+}
+footer .footer-container {
+  background: url(../img/bg-footer.jpg) center/cover;
+  min-height: 30vh;
+  min-width: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer .footer-container .left-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 300px;
+  max-width: 80%;
+  color: rgb(236, 236, 236);
+}
+footer .footer-container .left-part h2 {
+  font-size: 2rem;
+}
+footer .footer-container .left-part p {
+  line-height: 30px;
+}
+footer .footer-container .right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+footer .footer-container .right-part h5 {
+  margin: 10px 0;
+}
+footer .footer-container .right-part input {
+  height: 30px;
+  max-width: 30%;
+  background: transparent;
+  border: #565656 1px solid;
+  border-radius: 3px;
+  padding: 10px;
+}
+footer .footer-container .right-part div {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+footer .footer-container .right-part div i {
+  letter-spacing: 40px;
+  color: #565656;
+}/*# sourceMappingURL=style.css.map */

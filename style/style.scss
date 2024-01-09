@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@400;500&family=Roboto:wght@300&display=swap');
+
+$fonth2: 'Allura', cursive;
+$fonth1: 'Poppins', sans-serif;
+$fontp: 'Roboto', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body {
+    background: #21211D;
+    color: white;
+    font-family: $fontp;
+}
+
+h2 {
+    color: #906A4E;
+    font-family: $fonth2;
+}
+
+header {
+        background: url(../img/bg-slider-06.jpg) center/cover;
+        min-width: 100vh;
+        min-height: 100vh;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        background: transparent;
+        padding: 0px 160px;
+        position: relative;
+
+        .logo {
+            font-family: $fonth2;
+            font-size: 2.5rem;
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            font-size: 0.8rem;
+
+            li {
+                text-transform: uppercase;
+                font-family: $fonth1;
+
+                i {
+                    letter-spacing: 15px;
+                }
+            }
+        }
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 90vh;
+        padding-top: 210px;
+        .picto {
+            background: url(../img/ic-plate-big.png) center/cover;
+            height: 30px;
+            width: 30px;
+            margin-bottom: 60px;
+            margin-top: 65px;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-family: $fonth1;
+            letter-spacing: 5px;
+            line-height: 35px;
+        }
+        p {
+            letter-spacing: 7px;
+        }
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 50vh;
+
+    .left-main {
+        background: rgb(236, 236, 236);
+        text-align: center;
+    
+        .border {
+            margin: 20px;
+            border: #906A4E 1px dashed;
+            min-height: 50vh;
+            padding-top: 50px;     
+            padding: 60px 20px;
+            display: flex;
+            flex-direction: column;
+        justify-content: space-around;
+        }
+
+        h2 {
+            font-size: 2rem;
+            line-height: 40%;
+        }
+
+        h1 {
+            color: black;
+            font-family: $fonth1;
+            font-size: 1.1rem;
+        }
+
+        .picto {
+            background: url(../img/ic-plate.png) center/cover;
+            height: 30px;
+            width: 30px;
+            margin: 0 auto;
+        }
+
+        p {
+            color: black;
+        }
+        
+        .img {
+            background: url(../img/avatar-01.jpg) center/cover;
+            height: 60px;
+            width: 60px;
+            border-radius: 150px;
+            margin: 0 auto;
+        }
+    }
+    .right-main {
+        background: url(../img/store-01.jpg) center/cover;
+    }
+}
+
+.section-menu {
+    min-height: 100vh;
+    min-width: 100vh;
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        height: 550px;
+        width: 100%;
+        left: 0;
+        top:50%;
+        background: url(../img/bg-menu-01.jpg) center/cover;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        font-weight: 400;
+    }
+    .picto {
+        background: url(../img/ic-plate-big.png) center/cover;
+        height: 20px;
+        width: 20px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 70%;
+        margin: 0 auto;
+        padding: 40px;
+
+        li {
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                height: 1px;
+                background: #ffffff;
+                bottom: -40%;
+                left: 0;
+                width: 95%;
+            }
+        }
+    }
+
+    .menu {
+        display: grid;
+        align-items: center;
+        justify-items: stretch;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        background: rgb(236, 236, 236);
+        width: 55%;
+        max-width: 800px;
+        margin: 0 auto;
+        height: 650px;
+        position: relative;
+        z-index: 1;
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            position: relative;
+
+            p {
+                color: #21211D;
+                width: 230px;
+            }
+
+            h3 {
+                font-family: $fonth1;
+                color: #906A4E;;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                border: 1px dashed;
+                background: #2a2a2a;
+                width: 92%;
+                top: 100px;
+            }
+        }
+
+        .img {
+            height: 80px;
+            width: 80px;
+        }
+        
+        img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            height: 3px;
+            background: #906A4E;
+            width: 100%;
+            top: 0;
+        }
+    }
+
+}
+
+.reservation {
+    margin-top: 190px;
+    min-height: 50vh;
+    min-width: 100vh;
+    .grid-reservation {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 30% 70%;
+        max-width: 80%;
+        height: 60vh;
+        margin: 40px auto;
+        background: rgb(0, 0, 0);
+        box-shadow: black 0px 0px 10px 0;
+        .left-grid {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 40vh;
+
+            .picto {
+                background: url(../img/ic-plate-big.png) center/cover;
+                height: 20px;
+                width: 20px;
+                padding: 20px;
+            }
+        }
+        .right-grid {
+            background: rgb(236, 236, 236);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h2 {
+                font-size: 2rem;
+            }
+            h1 {
+                color: black;
+                font-family: $fonth1;
+            }
+            .picto {
+                background: url(../img/ic-plate.png) center/cover;
+                height: 30px;
+                width: 30px;
+                margin: 15px auto;
+            }
+            .grid {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                max-width: 80%;
+                gap: 20px;
+                align-items: center;
+
+                select {
+                    height: 48px;
+                    padding: 15px;
+                }
+
+                select, input {
+                    background: transparent;
+                    border: 1px black solid;
+                    color: black;
+                    border-radius: 30px;
+
+                }
+            }
+            input {
+                background: #21211D;
+                color: white;
+                padding: 15px 30px;
+                border-radius: 30px;
+                border: 0px;
+                letter-spacing: 2px;
+                margin: 20px 0;
+            }
+        }
+    }
+}
+
+.evenements {
+    h2 {
+        text-align: center;
+        font-size: 2.1rem;
+        margin-top: 80px;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: $fonth1;
+        letter-spacing: 3px;
+        line-height: 80%;
+    }
+
+    .picto {
+        background: url(../img/ic-plate-big.png) center/cover;
+        height: 20px;
+        width: 20px;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .grid-evenements {
+        display: grid;
+        grid-template-columns: 58% 39%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "fir sec"
+        "thi sec";
+        height: 400px;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        gap: 20px;
+        .first {
+            grid-area: fir;
+        }
+        .second {
+            grid-area: sec;
+            background: url(../img/event-03.jpg) center/cover;
+            height: 100%;
+            width: 100%;
+            color: black;
+            .cadre {
+                background: rgb(236, 236, 236);
+                height: 90%;
+                margin: 20px;
+                position: relative;
+                .second-absolute {
+                    position: absolute;
+                    background: #21211D;;
+                    height: 80px;
+                    width: 80px;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                }
+                .text-second {
+                   display: flex;
+                   flex-direction: column;
+                   justify-content: space-evenly;
+                   align-items: center;
+                   height: 400px;
+                   padding-top: 20px;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+        .third {
+            grid-area: thi;
+        }
+        .first, .third {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 1fr;
+            position: relative;
+            background: rgb(236, 236, 236);
+            color: black;
+            .img-1 {
+                background: url(../img/event-01.jpg) center/cover;
+                height: 100%;
+                width: 100%;
+            }
+            }
+            .img-3 {
+                background: url(../img/event-02.jpg) center/cover;
+                height: 100%;
+                width: 100%;
+            }
+            div .absolute {
+                position: absolute;
+                background: #21211D;;
+                height: 80px;
+                width: 80px;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 12%;
+                color: white;
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .text {
+                padding: 20px;
+            }
+        }
+    }
+
+.feedback {
+    min-height: 70vh;
+    color: black;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        background: url(../img/gmap.jpg) center/cover;
+        height: 400px;
+        min-width: 100%;
+        top:40%;
+    }
+    .block {
+        background: rgb(236, 236, 236);
+        max-width: 80%;
+        height: 40vh;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        margin-top: 200px;
+        z-index: 1;
+        .img {
+            background: url(../img/avatar-02.jpg) center/cover;
+            height: 60px;
+            width: 60px;
+            position: absolute;
+            border-radius: 150px;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-30%);
+        }
+        p {
+            max-width: 70%;
+            margin: 0 auto;
+            line-height: 200%;
+        }
+        h3 {
+            margin: 30px 0;
+        }
+        h5 {
+            color: #906A4E;;
+        }
+    }
+}
+
+footer {
+    min-height: 30vh;
+    min-width: 100vh;
+    .footer-container {
+        background: url(../img/bg-footer.jpg) center/cover;
+        min-height: 30vh;
+        min-width: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        .left-part {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 300px;
+            max-width: 80%;
+            color: rgb(236, 236, 236);
+            h2 {
+                font-size: 2rem;
+            }
+            p {
+                line-height: 30px;
+            }
+        }
+        .right-part {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 60px;
+            h5 {
+                margin: 10px 0;
+            }
+            input {
+                height: 30px;
+                max-width: 30%;
+                background: transparent;
+                border: #565656 1px solid;
+                border-radius: 3px;
+                padding: 10px;
+            }
+            div {
+                display: flex;
+                gap: 30px;
+                margin-top: 20px;
+                i {
+                    letter-spacing: 40px;
+                    color: #565656;
+                }
+            }
+        }
+    }
+}
